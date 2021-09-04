@@ -79,7 +79,7 @@ class ConverterTest {
 
         val result = converter.convert(from, to, 1f)
 
-        assertEquals(0.016666668f, result)
+        assertEquals(1.6666666f, result)
     }
 
     @Test
