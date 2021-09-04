@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.example.bushv.currencyconverter.R
 import com.example.bushv.currencyconverter.databinding.FragLoadingBinding
 
@@ -29,7 +30,7 @@ class LoadingFragment: Fragment() {
         viewModel.loadingResult.observe(viewLifecycleOwner) {
             when(it) {
                 is Result.Error -> showErrorLoadingMessage()
-                is Result.Success ->  {}// TODO: navigate to converter fragment
+                is Result.Success -> findNavController().navigate(R.id.convertFragment)
             }
         }
     }

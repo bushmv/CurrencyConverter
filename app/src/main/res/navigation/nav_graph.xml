@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nag_graph"
+    app:startDestination="@id/loadingFragment">
+
+    <fragment
+        android:id="@+id/loadingFragment"
+        android:name="com.example.bushv.currencyconverter.presentation.load_data.LoadingFragment"
+        android:label="LoadingFragment"
+        tools:layout="@layout/frag_loading">
+        <action
+            android:id="@+id/action_loadingFragment_to_convertFragment"
+            app:destination="@id/convertFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/convertFragment"
+        android:name="com.example.bushv.currencyconverter.presentation.convert_currencies.ConvertFragment"
+        android:label="ConvertFragment"
+        tools:layout="@layout/frag_converter"/>
+    <fragment
+        tools:layout="@layout/frag_dialog_choose_currency"
+        android:id="@+id/chooserCurrencyDialogFragment"
+        android:name="com.example.bushv.currencyconverter.presentation.change_currency.ChooserCurrencyDialogFragment"
+        android:label="ChooserCurrencyDialogFragment" />
+</navigation>

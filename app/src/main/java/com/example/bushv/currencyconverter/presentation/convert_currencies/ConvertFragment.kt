@@ -10,8 +10,10 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import com.example.bushv.currencyconverter.MainActivity
 import com.example.bushv.currencyconverter.R
 import com.example.bushv.currencyconverter.databinding.FragConverterBinding
+import com.example.bushv.currencyconverter.presentation.change_currency.ChooserCurrencyDialogFragment
 
 class ConvertFragment : Fragment() {
 
@@ -56,7 +58,18 @@ class ConvertFragment : Fragment() {
     }
 
     private fun setOnClickListeners() {
-        // TODO: add click listeners for change currencies
+        binding.apply {
+            changeLeftCurrency.setOnClickListener {
+                val currentCurrencyCharCode = viewModel.leftCurrency.value?.charCode ?: ""
+                ChooserCurrencyDialogFragment.create(0, currentCurrencyCharCode)
+                    .show((context as MainActivity).supportFragmentManager, "")
+            }
+            changeRightCurrency.setOnClickListener {
+                val currentCurrencyCharCode = viewModel.rightCurrency.value?.charCode ?: ""
+                ChooserCurrencyDialogFragment.create(1, currentCurrencyCharCode)
+                    .show((context as MainActivity).supportFragmentManager, "")
+            }
+        }
     }
 
     private fun setTextWatchers() {
