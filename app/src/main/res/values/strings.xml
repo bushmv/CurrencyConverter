@@ -4,7 +4,7 @@
     <string name="loading_error_message">There are some difficulties in getting data from the server. Please check your internet connection.</string>
     <string name="change_currency_text">Изменить \n валюту</string>
     <string name="icon_exchange_arrows">icon exchange arrows</string>
-    <string name="point_from_and_to_currency">Укажите валюту, из которой вы хотите конвертировать и/или валюту, в которую вы хотите конвертировать</string>
+    <string name="point_from_and_to_currency">Укажите валюту, из которой вы хотите конвертировать и валюту, в которую вы хотите конвертировать</string>
     <string name="point_currency_values">Укажите значение, которое вы хотите конвертировать</string>
     <string name="icon_for_chosen_currency">icon for chosen currency</string>
 </resources>
