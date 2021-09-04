@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">CurrencyConverter</string>
     <string name="loading_text">loading…</string>
+    <string name="loading_error_message">There are some difficulties in getting data from the server. Please check your internet connection.</string>
 </resources>
