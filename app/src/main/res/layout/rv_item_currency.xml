@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/currency_name"
+        android:layout_gravity="start"
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:layout_height="wrap_content"
+        tools:text="Российский рубль" />
+
+    <TextView
+        android:id="@+id/currency_charCode"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        tools:text="RUB"/>
+
+    <ImageView
+        android:id="@+id/currency_is_chosen"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:textSize="24sp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/icon_for_chosen_currency" />
+
+</LinearLayout>

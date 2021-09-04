@@ -6,4 +6,5 @@
     <string name="icon_exchange_arrows">icon exchange arrows</string>
     <string name="point_from_and_to_currency">кажите валюту, из которой вы хотите конвертировать и/или валюту, в которую вы хотите конвертировать</string>
     <string name="point_currency_values">Укажите значение, которое вы хотите конвертировать</string>
+    <string name="icon_for_chosen_currency">icon for chosen currency</string>
 </resources>
