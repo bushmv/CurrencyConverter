@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.bushv.currencyconverter.data.Repository
 import com.example.bushv.currencyconverter.data.XmlDocumentParser
 import com.example.bushv.currencyconverter.data.data_source.DataSource
 import com.example.bushv.currencyconverter.data.data_source.RemoteDataSource
@@ -44,6 +45,6 @@ class LoadingViewModel : ViewModel() {
     }
 
     private fun addLoadedCurrencyToRepository(currencies: List<Currency>) {
-
+        Repository.currencyCharCodeList = currencies
     }
 }
